@@ -1,8 +1,3 @@
-# Game-Shack-Hut
-Project for Software Engineering course at MIU
-
-Project Description:
-
 The Game Shack Hut, a local tabletop gaming store has contacted you with building some custom software for their employees and customers to use. 
 For those unaware of the hobby, the place is something like this: https://www.thewyvernstaleavl.com/
 
