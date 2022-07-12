@@ -1,10 +1,10 @@
-package edu.miu.cs.cs425.eregistrarwebapi.service.implementation;
+package edu.miu.cs425.gameshackhutapp.service.implementation;
 
-import edu.miu.cs.cs425.eregistrarwebapi.dto.LoginRequest;
-import edu.miu.cs.cs425.eregistrarwebapi.dto.LoginResponse;
-import edu.miu.cs.cs425.eregistrarwebapi.dto.RefreshToken;
-import edu.miu.cs.cs425.eregistrarwebapi.security.JWTHelper;
+import edu.miu.cs425.gameshackhutapp.dto.auth.LoginRequest;
+import edu.miu.cs425.gameshackhutapp.dto.auth.LoginResponse;
+import edu.miu.cs425.gameshackhutapp.dto.auth.RefreshToken;
 import edu.miu.cs.cs425.eregistrarwebapi.service.AuthService;
+import edu.miu.cs425.gameshackhutapp.security.JWTHelper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.AuthenticationManager;

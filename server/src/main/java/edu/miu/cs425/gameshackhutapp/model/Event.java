@@ -11,14 +11,14 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @Table(name="events")
 public class Event {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false)
-    Long eventId;
+    private Long eventId;
+
     private String eventName;
+
     private LocalDate date;
+
     private Integer capacity;
-
-
 }

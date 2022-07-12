@@ -1,4 +1,4 @@
-package edu.miu.cs.cs425.eregistrarwebapi.dto;
+package edu.miu.cs425.gameshackhutapp.dto.auth;
 
 import lombok.Builder;
 import lombok.Data;

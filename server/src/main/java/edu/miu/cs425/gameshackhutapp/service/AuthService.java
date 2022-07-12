@@ -1,8 +1,8 @@
 package edu.miu.cs.cs425.eregistrarwebapi.service;
 
-import edu.miu.cs.cs425.eregistrarwebapi.dto.LoginRequest;
-import edu.miu.cs.cs425.eregistrarwebapi.dto.LoginResponse;
-import edu.miu.cs.cs425.eregistrarwebapi.dto.RefreshToken;
+import edu.miu.cs425.gameshackhutapp.dto.auth.LoginRequest;
+import edu.miu.cs425.gameshackhutapp.dto.auth.LoginResponse;
+import edu.miu.cs425.gameshackhutapp.dto.auth.RefreshToken;
 
 public interface AuthService {
     LoginResponse login(LoginRequest loginRequest);
