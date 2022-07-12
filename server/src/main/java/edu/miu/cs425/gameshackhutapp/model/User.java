@@ -8,6 +8,7 @@ import org.hibernate.annotations.Where;
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
+import java.util.List;
 
 @Entity
 @Data
@@ -38,7 +39,7 @@ public class User {
 
     private boolean active;
 
-    @OneToOne
+    @OneToMany
     @JoinColumn(name = "role_id")
-    private Role role;
+    private List<Role> role;
 }

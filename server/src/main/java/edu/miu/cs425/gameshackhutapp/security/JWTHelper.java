@@ -1,4 +1,4 @@
-package edu.miu.cs.cs425.eregistrarwebapi.security;
+package edu.miu.cs425.gameshackhutapp.security;
 
 import io.jsonwebtoken.*;
 

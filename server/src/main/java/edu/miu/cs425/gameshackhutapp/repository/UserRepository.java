@@ -1,6 +1,6 @@
-package edu.miu.cs.cs425.eregistrarwebapi.repository;
+package edu.miu.cs425.gameshackhutapp.repository;
 
-import edu.miu.cs.cs425.eregistrarwebapi.model.User;
+import edu.miu.cs425.gameshackhutapp.model.User;
 import org.springframework.data.repository.CrudRepository;
 
 public interface UserRepository extends CrudRepository<User,Long> {

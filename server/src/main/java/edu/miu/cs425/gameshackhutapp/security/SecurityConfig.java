@@ -1,4 +1,4 @@
-package edu.miu.cs.cs425.eregistrarwebapi.security;
+package edu.miu.cs425.gameshackhutapp.security;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
@@ -34,8 +34,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .csrf().disable()
                 .authorizeRequests()
                 .antMatchers("/auth").permitAll()
-                .antMatchers("/student/**").hasAnyRole("ADMIN","REGISTRAR")
-                .antMatchers("/student/get/*").hasAnyRole("STUDENT","ADMIN","REGISTRAR")
+                .antMatchers("/**").hasAnyRole("ADMIN","STAFF")
                 .anyRequest()
                 .authenticated()
                 .and()

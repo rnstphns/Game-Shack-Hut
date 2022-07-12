@@ -1,6 +1,6 @@
-package edu.miu.cs.cs425.eregistrarwebapi.security;
+package edu.miu.cs425.gameshackhutapp.security;
 
-import edu.miu.cs.cs425.eregistrarwebapi.repository.UserRepository;
+import edu.miu.cs425.gameshackhutapp.repository.UserRepository;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;

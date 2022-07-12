@@ -1,8 +1,8 @@
-package edu.miu.cs.cs425.eregistrarwebapi.security;
+package edu.miu.cs425.gameshackhutapp.security;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import edu.miu.cs.cs425.eregistrarwebapi.model.Role;
-import edu.miu.cs.cs425.eregistrarwebapi.model.User;
+import edu.miu.cs425.gameshackhutapp.model.Role;
+import edu.miu.cs425.gameshackhutapp.model.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -23,13 +23,13 @@ public class AuthUserDetail implements UserDetails{
     public AuthUserDetail (User user){
         this.email = user.getEmail();
         this.password = user.getPassword();
-        this.roles = user.getRoles();
+        this.roles = user.getRole();
     }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return roles.stream()
-                .map(role -> new SimpleGrantedAuthority(role.getRole()))
+                .map(role -> new SimpleGrantedAuthority(role.getRoleName()))
                 .collect(Collectors.toList());
     }
 
