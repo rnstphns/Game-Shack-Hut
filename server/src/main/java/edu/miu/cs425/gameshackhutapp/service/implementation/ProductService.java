@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
-
+import java.util.List;
 @Service
 public class ProductService {
 
@@ -22,6 +22,29 @@ public class ProductService {
 
     @Autowired
     private CheckoutRepository checkoutRepository;
+
+    public void newProduct(ProductRequest request){
+        var newProduct = new Product(null, request.getProductName(), request.getPrice(),
+                request.getQuantityInStock(), request.getType());
+        return productRepository.save(newProduct);
+    }
+
+    public void deleteProductById(Long productId){
+        productRepository.deleteById(productId);
+    }
+
+    public Product editProduct(ProductRequest request, Long productId){
+        var newProduct = new Product(productId, request.getProductName(), request.getPrice(),
+                request.getQuantityInStock(), request.getType());
+        return productRepository.save(newProduct);
+    }
+    public Product getProductById(Long productId){
+        return productRepository.findById(productId);
+    }
+
+    public List<Product> getAllProducts(){
+        return productRepository.findAll();
+    }
 
     public void checkout(Long productId, Long customerId) {
         Product product = productRepository.findById(productId).orElse(null);
