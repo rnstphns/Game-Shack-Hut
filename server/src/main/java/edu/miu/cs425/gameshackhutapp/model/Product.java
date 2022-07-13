@@ -6,22 +6,33 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 
 @Entity
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(name="products")
 public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false)
-    Long productId;
+    private Long productId;
+
     @NotNull
-    String productName;
+    private String productName;
+
     @NotNull
-    Double price;
-    Integer quantityInStock;
+    private Double price;
+
+    @NotBlank
+    private Integer quantityInStock;
+
+    @NotBlank
+    private String type; //type of product, e.g. book, game, figure, etc.
+                        //could be Enum for consistency, unless that complicates database retrieval
+
+
 
     @OneToOne(mappedBy = "product")
     private Checkout checkout;
