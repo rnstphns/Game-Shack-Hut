@@ -10,7 +10,7 @@ import java.util.List;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name="checkout-record")
+@Table(name="checkout_record")
 public class Order {
 
     @Id
@@ -19,6 +19,7 @@ public class Order {
     @NotNull
     @Transient  //TODO is this correct?
     private List<OrderLine> cart;
-    @NotNull
-    private Customer customer;
+
+//    @NotNull
+//    private Customer customer;
 }

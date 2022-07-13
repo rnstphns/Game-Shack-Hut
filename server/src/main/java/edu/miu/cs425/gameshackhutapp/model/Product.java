@@ -12,6 +12,7 @@ import javax.validation.constraints.NotBlank;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name="products")
+@Data
 public class Product {
 
     @Id
