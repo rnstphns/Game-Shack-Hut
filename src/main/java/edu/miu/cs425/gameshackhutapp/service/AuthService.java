@@ -1,4 +1,4 @@
-package edu.miu.cs.cs425.eregistrarwebapi.service;
+package edu.miu.cs425.gameshackhutapp.service;
 
 import edu.miu.cs425.gameshackhutapp.dto.auth.LoginRequest;
 import edu.miu.cs425.gameshackhutapp.dto.auth.LoginResponse;
