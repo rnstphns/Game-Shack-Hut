@@ -10,7 +10,7 @@ import javax.persistence.Table;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name="products")
-public class Collectable implements Product{
+public class Collectable extends Product{
 
     private String type;
 

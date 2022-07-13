@@ -10,7 +10,7 @@ import javax.persistence.Table;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name="products")
-public class Book implements Product{
+public class Book extends Product{
 
     private String title;
     private String author;

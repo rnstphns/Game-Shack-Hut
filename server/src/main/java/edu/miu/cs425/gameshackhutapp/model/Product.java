@@ -1,11 +1,17 @@
 package edu.miu.cs425.gameshackhutapp.model;
 
 import com.sun.istack.NotNull;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 @Entity
-public interface Product {
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,5 +22,8 @@ public interface Product {
     @NotNull
     Double price;
     Integer quantityInStock;
+
+    @OneToOne(mappedBy = "product")
+    private Checkout checkout;
 
 }

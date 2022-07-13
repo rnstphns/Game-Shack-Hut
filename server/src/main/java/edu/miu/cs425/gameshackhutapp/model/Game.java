@@ -9,7 +9,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name="products")
-public class Game implements Product{
+public class Game extends Product{
 
     private String manufacturer;
     private String genre;
