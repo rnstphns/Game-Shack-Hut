@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e565e7f-31e7-48a5-b47c-235ea21653c2" name="Changes" comment="Update model files needed for checkout process">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="3e565e7f-31e7-48a5-b47c-235ea21653c2" name="Changes" comment="Update model files needed for checkout process" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -134,7 +129,7 @@
       <workItem from="1657554782109" duration="5790000" />
       <workItem from="1657571093871" duration="2181000" />
       <workItem from="1657727095943" duration="28000" />
-      <workItem from="1657735200837" duration="2770000" />
+      <workItem from="1657735200837" duration="2826000" />
     </task>
     <task id="LOCAL-00001" summary="Update model files needed for checkout process">
       <created>1657572972508</created>
