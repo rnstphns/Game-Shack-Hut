@@ -5,72 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e565e7f-31e7-48a5-b47c-235ea21653c2" name="Changes" comment="Update model files needed for checkout process">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/aopalliance-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/commons-logging-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javaee.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spring-aop-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spring-aspects-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spring-beans-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spring-context-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spring-context-support-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spring-core-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spring-expression-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spring-instrument-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spring-jdbc-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spring-jms-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spring-messaging-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spring-orm-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spring-oxm-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spring-test-5.2.3.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/spring-tx-5.2.3.RELEASE.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Game-Shack-Hut.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Game-Shack-Hut.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/edu/miu/cs425/gameshackhutapp/GameshackhutappApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs425/gameshackhutapp/GameshackhutappApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/edu/miu/cs425/gameshackhutapp/controller/CheckoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs425/gameshackhutapp/controller/CheckoutController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/edu/miu/cs425/gameshackhutapp/controller/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs425/gameshackhutapp/controller/EventController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/edu/miu/cs425/gameshackhutapp/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs425/gameshackhutapp/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/edu/miu/cs425/gameshackhutapp/dto/EventDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs425/gameshackhutapp/dto/EventDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/edu/miu/cs425/gameshackhutapp/dto/auth/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs425/gameshackhutapp/dto/auth/LoginRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/edu/miu/cs425/gameshackhutapp/dto/auth/LoginResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs425/gameshackhutapp/dto/auth/LoginResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/edu/miu/cs425/gameshackhutapp/dto/auth/RefreshToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs425/gameshackhutapp/dto/auth/RefreshToken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/edu/miu/cs425/gameshackhutapp/model/Checkout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs425/gameshackhutapp/model/Checkout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/edu/miu/cs425/gameshackhutapp/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs425/gameshackhutapp/model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/edu/miu/cs425/gameshackhutapp/model/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs425/gameshackhutapp/model/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/edu/miu/cs425/gameshackhutapp/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs425/gameshackhutapp/model/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/edu/miu/cs425/gameshackhutapp/model/OrderLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs425/gameshackhutapp/model/OrderLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/edu/miu/cs425/gameshackhutapp/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs425/gameshackhutapp/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/edu/miu/cs425/gameshackhutapp/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs425/gameshackhutapp/model/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/edu/miu/cs425/gameshackhutapp/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs425/gameshackhutapp/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/edu/miu/cs425/gameshackhutapp/repository/CheckoutRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs425/gameshackhutapp/repository/CheckoutRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/edu/miu/cs425/gameshackhutapp/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs425/gameshackhutapp/repository/CustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/edu/miu/cs425/gameshackhutapp/repository/EventRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs425/gameshackhutapp/repository/EventRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/edu/miu/cs425/gameshackhutapp/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs425/gameshackhutapp/repository/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/edu/miu/cs425/gameshackhutapp/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs425/gameshackhutapp/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/edu/miu/cs425/gameshackhutapp/security/AuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs425/gameshackhutapp/security/AuthFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/edu/miu/cs425/gameshackhutapp/security/AuthUserDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs425/gameshackhutapp/security/AuthUserDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/edu/miu/cs425/gameshackhutapp/security/AuthUserDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs425/gameshackhutapp/security/AuthUserDetailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/edu/miu/cs425/gameshackhutapp/security/JWTHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs425/gameshackhutapp/security/JWTHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/edu/miu/cs425/gameshackhutapp/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs425/gameshackhutapp/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/edu/miu/cs425/gameshackhutapp/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs425/gameshackhutapp/service/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/edu/miu/cs425/gameshackhutapp/service/EventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs425/gameshackhutapp/service/EventService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/edu/miu/cs425/gameshackhutapp/service/implementation/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs425/gameshackhutapp/service/implementation/AuthServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/edu/miu/cs425/gameshackhutapp/service/implementation/EventServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs425/gameshackhutapp/service/implementation/EventServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/edu/miu/cs425/gameshackhutapp/service/implementation/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/cs425/gameshackhutapp/service/implementation/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/tempates/fragments/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tempates/fragments/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/tempates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tempates/fragments/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/tempates/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tempates/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/test/java/edu/miu/cs425/gameshackhutapp/GameshackhutappApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/miu/cs425/gameshackhutapp/GameshackhutappApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +41,12 @@
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="true" />
         <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
   </component>
@@ -127,31 +69,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "openjdk-18",
-    "last_opened_file_path": "C:/Users/rnstp/OneDrive/Documents/GitHub/Game-Shack-Hut/src/main/resources/application.properties",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propCompiler",
-    "spring.configuration.checksum": "9b130a913b0f757c2d9ce19094fe3830"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-18&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/rnstp/OneDrive/Documents/GitHub/Game-Shack-Hut/src/main/resources/application.properties&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;344ff23ab7a5afb69b04fa74842acc66&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\rnstp\OneDrive\Documents\GitHub\Game-Shack-Hut" />
@@ -160,7 +102,7 @@
       <recent name="C:\Users\rnstp\OneDrive\Documents\MIU ComPro\WAP\workspace\Lab1\Game-Shack-Hut\src\main\resources\tempates" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GameshackhutappApplication">
+  <component name="RunManager" selected="Spring Boot.GameshackhutappApplication">
     <configuration name="GameshackhutappApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.miu.cs425.gameshackhutapp.GameshackhutappApplication" />
       <module name="Game-Shack-Hut" />
@@ -203,6 +145,8 @@
       <workItem from="1657554782109" duration="5790000" />
       <workItem from="1657571093871" duration="2181000" />
       <workItem from="1657729178156" duration="1911000" />
+      <workItem from="1657731416555" duration="69000" />
+      <workItem from="1657731494750" duration="1125000" />
     </task>
     <task id="LOCAL-00001" summary="Update model files needed for checkout process">
       <created>1657572972508</created>
