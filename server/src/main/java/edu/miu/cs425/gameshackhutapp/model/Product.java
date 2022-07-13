@@ -5,16 +5,29 @@ import com.sun.istack.NotNull;
 import javax.persistence.*;
 
 @Entity
-public interface Product {
+@AllArgsConstructor
+@NoArgsConstructor
+@Table(name="products")
+public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false)
-    Long productId;
+    private Long productId;
+
     @NotNull
-    String productName;
+    private String productName;
+
     @NotNull
-    Double price;
-    Integer quantityInStock;
+    private Double price;
+
+    @NotBlank
+    private Integer quantityInStock;
+
+    @NotBlank
+    private String type; //type of product, e.g. book, game, figure, etc.
+                        //could be Enum for consistency, unless that complicates database retrieval
+
+
 
 }
