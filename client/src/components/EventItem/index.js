@@ -1,21 +1,22 @@
 import { Button } from "@mui/material";
 import React from "react";
 import "./index.css";
+import moment from "moment";
 
 const EventItem = ({ event }) => {
   return (
     <div className="event">
       <div className="date">
         <div className="day">
-          <span>4</span>
+          <span>{moment(event.date).format("Do")}</span>
         </div>
         <div className="month">
-          <span>July</span>
+          <span>{moment(event.date).format("MMMM")}</span>
         </div>
       </div>
       <div className="event-info">
-        <div className="title">Event Title</div>
-        <div>Event Description</div>
+        <div className="title">{event.eventName}</div>
+        <div>Capacity {event.capacity}</div>
         <div className="action">
           <Button>Register</Button>
         </div>

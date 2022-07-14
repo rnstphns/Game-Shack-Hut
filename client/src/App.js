@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Product from "./pages/Product";
 import Event from "./pages/Event";
 import EventDetail from "./pages/EventDetail";
+import ProductDetail from "./pages/ProductDetail";
 
 function App() {
   const [isSignedIn, setSignedIn] = useState(
@@ -24,6 +25,7 @@ function App() {
         <Route path="/product" element={<Product />} />
         <Route path="/event" element={<Event />} />
         <Route path="/event/:id" element={<EventDetail />} />
+        <Route path="/product/:id" element={<ProductDetail />} />
       </Routes>
       <Footer />
     </AuthContext.Provider>

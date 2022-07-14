@@ -17,18 +17,17 @@ import java.util.Optional;
 
 @RestController
 @CrossOrigin
-@RequestMapping(value = "/product")
 public class ProductController {
 
     @Autowired
     private ProductService productService;
 
-    @PostMapping("/")
+    @PostMapping("/product")
     public ResponseEntity<Product> addNewProduct(@Valid @RequestBody ProductRequest request){
         return new ResponseEntity<>(productService.newProduct(request), HttpStatus.CREATED);
     }
 
-    @GetMapping("/")
+    @GetMapping("/product")
     public ResponseEntity<List<Product>> getAll(@RequestParam Optional<String> search){
         if(search.isPresent()){
             var result = productService.getAllProductByFilter(search.get());
@@ -39,18 +38,19 @@ public class ProductController {
         }
 
     }
-    @GetMapping("/{id}")
+
+    @GetMapping("/product/{id}")
     public ResponseEntity<Product> getByID(@PathVariable Long id){
             var result = productService.getProductById(id);
             return ResponseEntity.ok(result);
     }
 
-    @PostMapping("/{id}")
+    @PostMapping("/product/{id}")
     public ResponseEntity<Product> updateProduct(@Valid @RequestBody ProductRequest request,@PathVariable Long id){
         var result = productService.editProduct(request,id);
         return ResponseEntity.ok(result);
     }
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/product/{id}")
     public ResponseEntity<String> delete(@PathVariable Long id){
         productService.deleteProductById(id);
         return ResponseEntity.ok("Success");

@@ -1,12 +1,10 @@
 import { useState, useEffect, useCallback, useContext } from "react";
 import axios from "axios";
-import { toast } from "react-toastify";
-import { AuthContext } from "context/AuthContext";
+import { AuthContext } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 
 export const useAxios = (method, url, param = null) => {
   const navigate = useNavigate();
-  const notify = (msg, method = "error") => toast[method](msg);
   const { isSignedIn, setSignedIn } = useContext(AuthContext);
   console.log(isSignedIn);
   const [data, setData] = useState(null);
@@ -38,8 +36,8 @@ export const useAxios = (method, url, param = null) => {
           localStorage.removeItem("user");
           navigate("/");
         }
-        notify(e.response.data.message);
-        setError(e.response.data.message);
+        console.log(e);
+        setError("500 error");
       } finally {
         setLoading(false);
       }
@@ -50,6 +48,7 @@ export const useAxios = (method, url, param = null) => {
   useEffect(() => {
     if (data === null && method === "get") {
       executeRequest(param);
+      console.log("here");
     }
   }, [data, executeRequest, method]);
 
@@ -72,7 +71,7 @@ const customAxios = (axiosmethod, url, headers, data) => {
 const queryParam = (list) => {
   let query = "?";
   list.map((item, index, list) => {
-    query += item.key + "=" + item.value + (list.length > 0 ? "&" : "");
+    query += item.key + "=" + item.value + (list.length > 1 ? "&" : "");
   });
   return query;
 };

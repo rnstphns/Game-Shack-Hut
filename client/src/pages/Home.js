@@ -2,8 +2,25 @@ import { Button } from "@mui/material";
 import React from "react";
 import Header from "../components/Header";
 import ProductItem from "../components/ProductItem";
+import { useAxios } from "../api/useAxios";
+import MapsHomeWorkIcon from "@mui/icons-material/MapsHomeWork";
+import { Link } from "react-router-dom";
 
 const Home = () => {
+  const { data, error, loading, execute, queryParam } = useAxios(
+    "get",
+    "/product"
+  );
+
+  if (loading) {
+    return (
+      <>
+        <Header />
+        <h1>Loading...</h1>
+      </>
+    );
+  }
+  let list = data.length > 4 ? data.slice(0, 4) : data;
   return (
     <>
       <Header />
@@ -18,21 +35,25 @@ const Home = () => {
           <h3>Available Products</h3>
         </div>
         <div className="card-list">
-          <ProductItem
-            product={{ id: 1, name: "asd", description: "asdf", price: 123 }}
-          />
-          <ProductItem
-            product={{ id: 1, name: "asd", description: "asdf", price: 123 }}
-          />
-          <ProductItem
-            product={{ id: 1, name: "asd", description: "asdf", price: 123 }}
-          />
-          <ProductItem
-            product={{ id: 1, name: "asd", description: "asdf", price: 123 }}
-          />
+          {list.length > 0 ? (
+            list.map((item, index) => {
+              return <ProductItem key={item.id} product={item} />;
+            })
+          ) : (
+            <>
+              <div className="empty-list" style={{ minHeight: "500px" }}>
+                <MapsHomeWorkIcon
+                  style={{ fontSize: "35px", marginBottom: "10px" }}
+                />
+                <h3> Sorry! We could not find any properties.</h3>
+              </div>
+            </>
+          )}
         </div>
         <div className="home action">
-          <Button variant="contained">View All</Button>
+          <Button variant="contained" component={Link} to="/product">
+            View All
+          </Button>
         </div>
       </div>
     </>
