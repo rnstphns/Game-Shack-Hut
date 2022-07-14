@@ -1,46 +1,59 @@
 package edu.miu.cs425.gameshackhutapp.controller;
 
+import edu.miu.cs425.gameshackhutapp.dto.ProductRequest;
 import edu.miu.cs425.gameshackhutapp.model.Customer;
 import edu.miu.cs425.gameshackhutapp.model.Product;
 import edu.miu.cs425.gameshackhutapp.service.implementation.ProductService;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.function.EntityResponse;
 
+import javax.validation.Valid;
+import java.util.List;
+import java.util.Optional;
+
 @RestController
 @CrossOrigin
-@RequestMapping(value = "/test")
-public class CheckoutController {
+@RequestMapping(value = "/product")
+public class ProductController {
 
     @Autowired
-    private ProductService service;
+    private ProductService productService;
 
-    @PostMapping("/new")
+    @PostMapping("/")
     public ResponseEntity<Product> addNewProduct(@Valid @RequestBody ProductRequest request){
-        return new ResponseEntity<>(service.newProduct(request), HttpStatus.CREATED);
+        return new ResponseEntity<>(productService.newProduct(request), HttpStatus.CREATED);
     }
 
-    @PutMapping (value="/edit/{productId}"){
-        public ResponseEntity<Product> editProduct(@Valid @RequestBody ProductRequest request,
-                                                    @PathVariable Long productId){
-            return new ResponseEntity<>(service.editProduct(request, productId), HttpStatus.OK);
+    @GetMapping("/")
+    public ResponseEntity<List<Product>> getAll(@RequestParam Optional<String> search){
+        if(search.isPresent()){
+            var result = productService.getAllProductByFilter(search.get());
+            return ResponseEntity.ok(result);
+        }else{
+            var result = productService.getAllProducts();
+            return ResponseEntity.ok(result);
         }
+
+    }
+    @GetMapping("/{id}")
+    public ResponseEntity<Product> getByID(@PathVariable Long id){
+            var result = productService.getProductById(id);
+            return ResponseEntity.ok(result);
     }
 
-    @Date
-    static class ProductRequest{
-        @NotNull
-        private String productName;
-
-        @NotNull
-        private Double price;
-
-        @NotBlank
-        private Integer quantityInStock;
-
-        @NotBlank
-        private String type; //type of product, e.g. book, game, figure, etc.
+    @PostMapping("/{id}")
+    public ResponseEntity<Product> updateProduct(@Valid @RequestBody ProductRequest request,@PathVariable Long id){
+        var result = productService.editProduct(request,id);
+        return ResponseEntity.ok(result);
     }
+    @DeleteMapping("/{id}")
+    public ResponseEntity<String> delete(@PathVariable Long id){
+        productService.deleteProductById(id);
+        return ResponseEntity.ok("Success");
+    }
+
 }

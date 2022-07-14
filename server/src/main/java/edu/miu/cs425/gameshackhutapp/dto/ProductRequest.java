@@ -1,25 +1,16 @@
-package edu.miu.cs425.gameshackhutapp.model;
+package edu.miu.cs425.gameshackhutapp.dto;
 
-import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
-@Entity
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name="products")
-@Data
-public class Product {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(nullable = false)
-    private Long productId;
-
+public class ProductRequest{
     @NotNull
     private String productName;
 
@@ -31,6 +22,4 @@ public class Product {
 
     @NotBlank
     private String type; //type of product, e.g. book, game, figure, etc.
-                        //could be Enum for consistency, unless that complicates database retrieval
-
 }

@@ -1,5 +1,6 @@
 package edu.miu.cs425.gameshackhutapp.service.implementation;
 
+import edu.miu.cs425.gameshackhutapp.dto.ProductRequest;
 import edu.miu.cs425.gameshackhutapp.model.Checkout;
 import edu.miu.cs425.gameshackhutapp.model.Customer;
 import edu.miu.cs425.gameshackhutapp.model.Product;
@@ -23,7 +24,7 @@ public class ProductService {
     @Autowired
     private CheckoutRepository checkoutRepository;
 
-    public void newProduct(ProductRequest request){
+    public Product newProduct(ProductRequest request){
         var newProduct = new Product(null, request.getProductName(), request.getPrice(),
                 request.getQuantityInStock(), request.getType());
         return productRepository.save(newProduct);
@@ -39,11 +40,14 @@ public class ProductService {
         return productRepository.save(newProduct);
     }
     public Product getProductById(Long productId){
-        return productRepository.findById(productId);
+        return productRepository.findById(productId).get();
     }
 
     public List<Product> getAllProducts(){
         return productRepository.findAll();
+    }
+    public List<Product> getAllProductByFilter(String search){
+        return productRepository.findAllByProductNameLike(search);
     }
 
     public void checkout(Long productId, Long customerId) {
