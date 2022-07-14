@@ -100,7 +100,7 @@ function App() {
           }
         />
         <Route
-          path="/new-product"
+          path="/new-event"
           element={
             <AuthWrapper role={[ROLE.Admin, ROLE.Staff]}>
               <NewEvent role={role} />

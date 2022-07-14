@@ -6,7 +6,7 @@ function AdminDashboard() {
   return (
     <Layout title="Dashboard">
       <Grid container spacing={1}>
-        Here
+        Dashboard
       </Grid>
     </Layout>
   );

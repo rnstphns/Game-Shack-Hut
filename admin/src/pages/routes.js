@@ -22,7 +22,7 @@ const adminRoutes = [
     icon: <ContactMailIcon />,
   },
   {
-    route: "/Event",
+    route: "/event",
     menu: "Event",
     icon: <PeopleIcon />,
   },

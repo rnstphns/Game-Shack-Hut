@@ -9,7 +9,7 @@ const NewEvent = () => {
         <Paper>
           <Box component="form" onSubmit={() => {}} p={3}>
             <Typography variant="h6" gutterBottom>
-              New Product
+              New Event
             </Typography>
             <Grid container spacing={3}>
               <Grid item xs={12} sm={12}>
@@ -24,35 +24,25 @@ const NewEvent = () => {
                 />
               </Grid>
 
-              <Grid item xs={5} sm={2}>
+              <Grid item xs={12} sm={4}>
                 <TextField
                   required
                   id="numberOfBedrooms"
                   name="numberOfBedrooms"
-                  label="Price"
+                  label="Date"
                   fullWidth
-                  variant="standard"
+                  type="date"
+                  value={new Date()}
                 />
               </Grid>
-              <Grid item xs={5} sm={2}>
+              <Grid item xs={12} sm={4}>
                 <TextField
                   required
                   id="propertyName"
                   name="propertyName"
-                  label="Type"
+                  label="Capacity"
                   fullWidth
                   autoComplete="property-name"
-                  variant="standard"
-                />
-              </Grid>
-
-              <Grid item xs={8} sm={5}>
-                <TextField
-                  required
-                  id="securityDepositAmount"
-                  name="securityDepositAmount"
-                  label="Quantity"
-                  fullWidth
                   variant="standard"
                 />
               </Grid>
