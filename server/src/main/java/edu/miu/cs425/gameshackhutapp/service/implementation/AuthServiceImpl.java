@@ -4,9 +4,12 @@ import edu.miu.cs425.gameshackhutapp.dto.auth.LoginRequest;
 import edu.miu.cs425.gameshackhutapp.dto.auth.LoginResponse;
 import edu.miu.cs425.gameshackhutapp.dto.auth.RefreshToken;
 import edu.miu.cs.cs425.eregistrarwebapi.service.AuthService;
+import edu.miu.cs425.gameshackhutapp.model.User;
+import edu.miu.cs425.gameshackhutapp.repository.UserRepository;
 import edu.miu.cs425.gameshackhutapp.security.JWTHelper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -20,6 +23,8 @@ public class AuthServiceImpl implements AuthService {
 
     private final AuthenticationManager authenticationManager;
     private final UserDetailsService userDetailsService;
+    @Autowired
+    private UserRepository userRepository;
     private final JWTHelper jwtHelper;
 
     @Override
@@ -35,7 +40,9 @@ public class AuthServiceImpl implements AuthService {
 
         final String accessToken = jwtHelper.generateToken(loginRequest.getEmail());
         final String refreshToken = jwtHelper.generateRefreshToken(loginRequest.getEmail());
-        var loginResponse = new LoginResponse(accessToken, refreshToken);
+        User user = userRepository.findByEmail(loginRequest.getEmail());
+
+        var loginResponse = new LoginResponse(accessToken, refreshToken,user.getName(),user.getRole().get(0).getRoleName());
         return loginResponse;
     }
 
@@ -44,7 +51,7 @@ public class AuthServiceImpl implements AuthService {
         boolean isRefreshTokenValid = jwtHelper.validateToken(refreshTokenRequest.getRefreshToken());
         if (isRefreshTokenValid) {
             final String accessToken = jwtHelper.generateToken(jwtHelper.getSubject(refreshTokenRequest.getRefreshToken()));
-            var loginResponse = new LoginResponse(accessToken, refreshTokenRequest.getRefreshToken());
+            var loginResponse = new LoginResponse(accessToken, refreshTokenRequest.getRefreshToken(),null,null);
             return loginResponse;
         }
         return new LoginResponse();

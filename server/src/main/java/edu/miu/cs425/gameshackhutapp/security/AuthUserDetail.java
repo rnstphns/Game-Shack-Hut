@@ -21,6 +21,7 @@ public class AuthUserDetail implements UserDetails{
     private List<Role> roles;
 
     public AuthUserDetail (User user){
+
         this.email = user.getEmail();
         this.password = user.getPassword();
         this.roles = user.getRole();
@@ -28,6 +29,7 @@ public class AuthUserDetail implements UserDetails{
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
+
         return roles.stream()
                 .map(role -> new SimpleGrantedAuthority(role.getRoleName()))
                 .collect(Collectors.toList());
