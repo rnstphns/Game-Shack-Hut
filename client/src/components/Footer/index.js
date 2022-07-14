@@ -4,23 +4,23 @@ import "./index.css";
 const Footer = () => {
   return (
     <footer>
-      <div class="footer">
-        <div class="row">
+      <div className="footer">
+        <div className="row">
           <a href="#">
-            <i class="fa fa-facebook"></i>
+            <i className="fa fa-facebook"></i>
           </a>
           <a href="#">
-            <i class="fa fa-instagram"></i>
+            <i className="fa fa-instagram"></i>
           </a>
           <a href="#">
-            <i class="fa fa-youtube"></i>
+            <i className="fa fa-youtube"></i>
           </a>
           <a href="#">
-            <i class="fa fa-twitter"></i>
+            <i className="fa fa-twitter"></i>
           </a>
         </div>
 
-        <div class="row">
+        <div className="row">
           <ul>
             <li>
               <a href="#">Contact us</a>
@@ -40,9 +40,9 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div class="row">
-          GigaBits Copyright © 2021 GigaBits - All rights reserved || Designed
-          and Developed By: GigaBits Groups
+        <div className="row">
+          GameShackHut Copyright © 2021 GameShackHut - All rights reserved ||
+          Designed and Developed By: GameShackHut Groups
         </div>
       </div>
     </footer>

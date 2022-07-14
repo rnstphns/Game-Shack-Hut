@@ -1,0 +1,37 @@
+.event {
+  width: 100%;
+  text-align: center;
+}
+.event .date {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.event .date .day {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.event .date .month {
+  padding-left: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.event-info {
+  margin-top: 20px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.event-info .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.event-info .divider {
+  margin: 0px 100px 0px 100px;
+  padding-top: 20px;
+}
+.event-info .action {
+  margin-top: 10px;
+}

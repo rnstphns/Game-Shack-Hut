@@ -4,6 +4,9 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import { AuthContext } from "./context/AuthContext";
 import Footer from "./components/Footer";
+import Product from "./pages/Product";
+import Event from "./pages/Event";
+import EventDetail from "./pages/EventDetail";
 
 function App() {
   const [isSignedIn, setSignedIn] = useState(
@@ -18,6 +21,9 @@ function App() {
       <Routes>
         {/* <Route path="*" element={<NotFound />} /> */}
         <Route path="/" element={<Home />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/event" element={<Event />} />
+        <Route path="/event/:id" element={<EventDetail />} />
       </Routes>
       <Footer />
     </AuthContext.Provider>

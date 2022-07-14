@@ -22,20 +22,16 @@ const Header = ({ type = "default", onFilter = () => {} }) => {
             <Button
               variant="text"
               className="menu-item"
-              onClick={() => {
-                setSignedIn(false);
-                localStorage.removeItem("token");
-              }}
+              component={Link}
+              to="/product"
             >
               Products
             </Button>
             <Button
               variant="text"
+              component={Link}
+              to="/event"
               className="menu-item"
-              onClick={() => {
-                setSignedIn(false);
-                localStorage.removeItem("token");
-              }}
             >
               Events
             </Button>
