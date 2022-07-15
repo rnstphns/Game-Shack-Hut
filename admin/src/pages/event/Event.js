@@ -51,6 +51,7 @@ const Event = () => {
                 <TableCell>Name</TableCell>
                 <TableCell align="right">Date</TableCell>
                 <TableCell align="right">Capacity</TableCell>
+                <TableCell align="right">Action</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -64,6 +65,24 @@ const Event = () => {
                   </TableCell>
                   <TableCell align="right">{row.date}</TableCell>
                   <TableCell align="right">{row.capacity}</TableCell>
+                  <TableCell align="right">
+                    <Button
+                      variant="contained"
+                      color="secondary"
+                      component={Link}
+                      to="/new-product"
+                    >
+                      Edit
+                    </Button>{" "}
+                    <Button
+                      variant="contained"
+                      color="error"
+                      component={Link}
+                      to="/new-product"
+                    >
+                      Delete
+                    </Button>
+                  </TableCell>
                 </TableRow>
               ))}
             </TableBody>

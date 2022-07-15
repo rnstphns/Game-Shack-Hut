@@ -52,6 +52,7 @@ const Product = () => {
                 <TableCell align="right">Price</TableCell>
                 <TableCell align="right">Quantity</TableCell>
                 <TableCell align="right">Type</TableCell>
+                <TableCell align="right">Action</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -66,6 +67,24 @@ const Product = () => {
                   <TableCell align="right">{row.price}</TableCell>
                   <TableCell align="right">{row.quantityInStock}</TableCell>
                   <TableCell align="right">{row.type}</TableCell>
+                  <TableCell align="right">
+                    <Button
+                      variant="contained"
+                      color="secondary"
+                      component={Link}
+                      to="/new-product"
+                    >
+                      Edit
+                    </Button>{" "}
+                    <Button
+                      variant="contained"
+                      color="error"
+                      component={Link}
+                      to="/new-product"
+                    >
+                      Delete
+                    </Button>
+                  </TableCell>
                 </TableRow>
               ))}
             </TableBody>
